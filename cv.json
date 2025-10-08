@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Jorge Luis",
-    "label": "Engineer, Full Stack Developer, Project and Product Manager",
+    "label": "Engineer, Full Stack Developer, Product and Project Manager",
     "image": "",
     "email": "jorgeluis@resolvedor.dev",
     "phone": "(593) 096 952 8480",
@@ -16,9 +16,19 @@
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "john",
-        "url": "https://twitter.com/john"
+        "network": "LinkedIn",
+        "username": "Jorge Luis",
+        "url": "https://www.linkedin.com/in/joguenco/"
+      },
+      {
+        "network": "GitHub",
+        "username": "joguenco",
+        "url": "https://github.com/joguenco"
+      },
+      {
+        "network": "YouTube",
+        "username": "joguenco",
+        "url": "https://www.youtube.com/@joguenco"
       }
     ]
   },

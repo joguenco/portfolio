@@ -1,9 +1,16 @@
 ---
 import { basics } from '@cv'
 import Section from '@/components/Section.astro'
+import { Icon } from 'astro-icon/components'
 
 const { name, label, image, location, profiles, phone, email } = basics
 const { city, region } = location
+
+const SOCIAL_ICONS: Record<string, string> = {
+  GitHub: 'github',
+  LinkedIn: 'linkedin',
+  YouTube: 'youtube',
+}
 ---
 
 <Section>
@@ -13,7 +20,23 @@ const { city, region } = location
       <h2>{label}</h2>
       <span>{region} {city}</span>
       <footer>
-        {email}
+        <Icon name="mail" />{email}
+        <Icon name="phone" />{phone}
+        {
+          profiles.map(({ network, url, username }) => {
+            const iconName = SOCIAL_ICONS[network]
+            return (
+              <a
+                href={url}
+                title={network}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon name={iconName} />
+              </a>
+            )
+          })
+        }
       </footer>
     </div>
   </div>
