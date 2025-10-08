@@ -24,13 +24,26 @@ const SOCIAL_ICONS: Record<string, string> = {
         {city}
       </span>
       <footer>
-        <div class="info">
-        <Icon name="mail" />{email}
-        </div>
-        <div class="info">
-        <Icon name="phone" />{phone}
-        </div>
-        <div class="info">
+        {
+          email && (
+            <a href={`mailto:${email}`} title="Email me">
+              <Icon name="mail" />
+            </a>
+          )
+        }
+        <a id="copyEmail" class="copy" title="Copy email" href="#">
+          <Icon name="copy" />
+        </a>
+        {
+          phone && (
+            <a href={`tel:${phone}`} title="Call me">
+              <Icon name="phone" />
+            </a>
+          )
+        }
+        <a id="copyPhone" class="copy" title="Copy phone number" href="#">
+          <Icon name="copy" />
+        </a>
         {
           profiles.map(({ network, url, username }) => {
             const iconName = SOCIAL_ICONS[network]
@@ -46,7 +59,6 @@ const SOCIAL_ICONS: Record<string, string> = {
             )
           })
         }
-        </div>
       </footer>
     </div>
     <figure>
@@ -54,6 +66,18 @@ const SOCIAL_ICONS: Record<string, string> = {
     </figure>
   </div>
 </Section>
+
+<script define:vars={{ email, phone }}>
+  document.getElementById('copyEmail')?.addEventListener('click', (e) => {
+    e.preventDefault()
+    navigator.clipboard.writeText(email)
+  })
+
+  document.getElementById('copyPhone')?.addEventListener('click', (e) => {
+    e.preventDefault()
+    navigator.clipboard.writeText(phone)
+  })
+</script>
 
 <style>
   .container {
@@ -119,5 +143,22 @@ const SOCIAL_ICONS: Record<string, string> = {
 
   footer a:hover {
     background: #eee;
+  }
+
+  footer .copy {
+    color: #595858;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #cccbcb;
+    padding: 4px;
+    height: 32px;
+    width: 32px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+
+  footer .copy:hover {
+    background: #ebf3f9;
   }
 </style>
