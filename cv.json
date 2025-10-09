@@ -6,7 +6,7 @@
     "email": "jorgeluis@resolvedor.dev",
     "phone": "+593969528480",
     "url": "https://joguenco.dev",
-    "summary": "A summary of John Doe…",
+    "summary": "I am a person who loves software technology, hardware, video games and everything related to computers. I have more than 15 years of experience in the IT field, I began to working in desktop application for accounting sector, then I moved to web development, development product and project management. Later, I worked in infrastructure, managing bare-metal servers in GNU/Linux and Windows environments, as well as in cloud computing, virtualization and containerization. I also have experience as a database administrator. I am  proficient in various programming languages, frameworks. I like to learn new technologies and enhance my skills. I am a responsible person, with good communication skills and ability to work in team.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -26,6 +26,16 @@
         "url": "https://github.com/joguenco"
       },
       {
+        "network": "GitHub",
+        "username": "jorge-luis-dev",
+        "url": "https://github.com/jorge-luis-dev"
+      },
+      {
+        "network": "GitLab",
+        "username": "joguenco",
+        "url": "https://gitlab.com/joguenco"
+      },
+      {
         "network": "YouTube",
         "username": "joguenco",
         "url": "https://www.youtube.com/@joguenco"
@@ -34,86 +44,119 @@
   },
   "work": [
     {
+      "name": "Gestor - Business Consulting",
+      "position": "Desktop Developer, Database Administrator",
+      "startDate": "2008-11-01",
+      "endDate": "2012-10-01",
+      "summary": "Description…",
+      "highlights": ["Started the company"]
+    },
+    {
+      "name": "Ideas en Binario",
+      "position": "Product and Project Manager, Full Stack Developer",
+      "startDate": "2013-08-19",
+      "endDate": "2025-02-23",
+      "summary": "Description…",
+      "highlights": ["Started the company"]
+    },
+    {
       "name": "Resolvedor 10010",
       "position": "President",
-      "url": "https://company.com",
-      "startDate": "2013-01-01",
+      "url": "https://resolvedor.dev",
+      "startDate": "2025-02-24",
       "endDate": "",
       "summary": "Description…",
       "highlights": ["Started the company"]
     }
   ],
-  "volunteer": [
-    {
-      "organization": "Organization",
-      "position": "Volunteer",
-      "url": "https://organization.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Description…",
-      "highlights": ["Awarded 'Volunteer of the Month'"]
-    }
-  ],
   "education": [
     {
-      "institution": "University",
-      "url": "https://institution.com/",
-      "area": "Software Development",
+      "institution": "Universidad Técnica del Norte",
+      "url": "https://www.utn.edu.ec/",
+      "area": "Computer Systems Engineer",
       "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
-      "score": "4.0",
-      "courses": ["DB1101 - Basic SQL"]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Award",
-      "date": "2014-11-01",
-      "awarder": "Company",
-      "summary": "There is no spoon."
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
-      "url": "https://certificate.com"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Publication",
-      "publisher": "Company",
-      "releaseDate": "2014-10-01",
-      "url": "https://publication.com",
-      "summary": "Description…"
+      "startDate": "",
+      "endDate": "2015-11-01",
+      "score": "",
+      "courses": []
     }
   ],
   "skills": [
     {
+      "name": "Full Stack Development",
+      "keywords": [
+        "Java",
+        "Kotlin",
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "C#",
+        "PHP",
+        "Ruby",
+        "Go",
+        "C++",
+        "Swift",
+        "Free Pascal",
+        "PL/SQL",
+        "T-SQL",
+        "PgSQL"
+      ]
+    },
+    {
       "name": "Web Development",
-      "level": "Master",
-      "keywords": ["HTML", "CSS", "JavaScript"]
+      "keywords": ["WordPress", "Astro", "Strapi"]
+    },
+    {
+      "name": "Desktop Development",
+      "keywords": ["Oracle Forms", "Qt", "Swing", "WinForms"]
+    },
+    {
+      "name": "Mobile Development",
+      "keywords": ["Jetpack Compose"]
+    },
+    {
+      "name": "Frameworks and Libraries",
+      "keywords": [
+        "Spring Boot",
+        "Micronaut",
+        "Express",
+        "Fastify",
+        "Hono",
+        "FastAPI",
+        "Flask",
+        "Vue",
+        "Laravel",
+        "Oracle APEX",
+        "Ruby on Rails",
+        ".NET Core"
+      ]
+    },
+    {
+      "name": "Databases",
+      "keywords": [
+        "MySQL",
+        "Maria DB",
+        "PostgreSQL",
+        "Oracle",
+        "Microsoft SQL Server",
+        "SQLite",
+        "MongoDB",
+        "Redis"
+      ]
+    },
+    {
+      "name": "DevOps and Cloud Computing",
+      "keywords": ["Docker", "AWS"]
+    },
+    {
+      "name": "Operating Systems",
+      "keywords": ["GNU/Linux", "Windows"]
     }
   ],
   "languages": [
     {
       "language": "English",
       "fluency": "Native speaker"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Wildlife",
-      "keywords": ["Ferrets", "Unicorns"]
-    }
-  ],
-  "references": [
-    {
-      "name": "Jane Doe",
-      "reference": "Reference…"
     }
   ],
   "projects": [
