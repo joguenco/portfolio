@@ -83,6 +83,17 @@
   ],
   "skills": [
     {
+      "name": "Leadership and Management",
+      "keywords": [
+        "Product Management",
+        "Project Management",
+        "Team Leadership",
+        "Agile Methodologies",
+        "Scrum",
+        "Kanban"
+      ]
+    },
+    {
       "name": "Full Stack Development",
       "keywords": [
         "Java",
@@ -161,12 +172,43 @@
   ],
   "projects": [
     {
-      "name": "Project",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": ["Won award at AIHacks 2016"],
-      "url": "https://project.com/"
+      "name": "Odoo Localization Contributor",
+      "startDate": "2023-10-03",
+      "endDate": "",
+      "description": "Fiscal localizations are country-specific modules that allow you to be compliant with a fiscal requirements. These modules are related to the Accounting, but they can also be necessary for other apps such as Inventory, eCommerce ...",
+      "highlights": ["Odoo", "ERP", "Ecuador", "Python", "PostgreSQL"],
+      "url": "https://github.com/OCA/l10n-ecuador"
+    },
+    {
+      "name": "Odoo Localization Friendly Version",
+      "startDate": "2024-12-06",
+      "endDate": "",
+      "description": "This project is a fork of the original OCA repository, but with some modifications to make it easier to use and understand.",
+      "highlights": [
+        "Odoo",
+        "ERP",
+        "Ecuador",
+        "Python",
+        "JavaScript",
+        "PostgreSQL"
+      ],
+      "url": "https://github.com/joguenco/odoo-l10n-ecuador"
+    },
+    {
+      "name": "uniCenta fork for Ecuador",
+      "startDate": "2025-02-19",
+      "endDate": "",
+      "description": "uniCenta oPOS powerful commercial-grade open source Point Of Sale, this project allows to be compliant with the fiscal requirements in Ecuador.",
+      "highlights": ["uniCenta", "Java Swing", "Point of Sale", "Ecuador"],
+      "url": "https://github.com/OCA/l10n-ecuador"
+    },
+    {
+      "name": "RoQui Ec",
+      "startDate": "2025-02-19",
+      "endDate": "",
+      "description": "E-Invoice module that generates XML, Sign and Send to the SRI (Ecuadorian Tax Authority) for integration with any ERP or Point of Sale software.",
+      "highlights": ["Spring Boot", "Ecuador", "E-Invoice"],
+      "url": "https://github.com/joguenco/RoQui_ec"
     }
   ]
 }
