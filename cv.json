@@ -167,7 +167,7 @@
   "languages": [
     {
       "language": "English",
-      "fluency": "Native speaker"
+      "fluency": "Good speaker"
     }
   ],
   "projects": [
@@ -199,7 +199,7 @@
       "startDate": "2025-02-19",
       "endDate": "",
       "description": "uniCenta oPOS powerful commercial-grade open source Point Of Sale, this project allows to be compliant with the fiscal requirements in Ecuador.",
-      "highlights": ["uniCenta", "Java Swing", "Point of Sale", "Ecuador"],
+      "highlights": ["uniCenta", "Java", "Swing", "Point of Sale", "Ecuador"],
       "url": "https://github.com/OCA/l10n-ecuador"
     },
     {
@@ -207,8 +207,31 @@
       "startDate": "2025-02-19",
       "endDate": "",
       "description": "E-Invoice module that generates XML, Sign and Send to the SRI (Ecuadorian Tax Authority) for integration with any ERP or Point of Sale software.",
-      "highlights": ["Spring Boot", "Ecuador", "E-Invoice"],
+      "highlights": [
+        "Spring Boot",
+        "Vue",
+        "Kotlin",
+        "JavaScript",
+        "Ecuador",
+        "E-Invoice"
+      ],
       "url": "https://github.com/joguenco/RoQui_ec"
+    },
+    {
+      "name": "Echo Print",
+      "startDate": "2025-04-29",
+      "endDate": "",
+      "description": "REST API Server for print tickets in Printers (ESC/POS) from any device that can make HTTP requests. Is ideal for web applications and mobile applications.",
+      "highlights": ["Free Pascal", "Lazarus IDE", "ESC/POS", "Point of Sale"],
+      "url": "https://github.com/joguenco/EchoPrint/tree/gui"
+    },
+    {
+      "name": "ReIdi",
+      "startDate": "2024-06-28",
+      "endDate": "",
+      "description": "REST API Microservice for return the information of a Ecuadorian National ID (Cédula) or a Tax ID (RUC). The information is obtained from the official public website of SRI (Ecuadorian Tax Authority).",
+      "highlights": ["Hono", "TypeScript", "Python"],
+      "url": "https://github.com/joguenco/ReIdi.py.ts"
     }
   ]
 }
