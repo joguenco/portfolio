@@ -12,6 +12,8 @@ const SOCIAL_ICONS: Record<string, string> = {
   YouTube: 'youtube',
   GitLab: 'gitlab',
 }
+
+const printInfo = [email, phone].filter(Boolean).join(' • ')
 ---
 
 <Section>
@@ -24,7 +26,10 @@ const SOCIAL_ICONS: Record<string, string> = {
         {region}
         {city}
       </span>
-      <footer>
+      <footer class="print">
+        {printInfo}
+      </footer>
+      <footer class="no-print">
         {
           email && (
             <a href={`mailto:${email}`} title="Email me">
@@ -124,6 +129,8 @@ const SOCIAL_ICONS: Record<string, string> = {
   }
 
   footer {
+    font-size: 0.9rem;
+    color: #555;
     display: flex;
     gap: 4px;
     margin-top: 8px;
@@ -161,5 +168,21 @@ const SOCIAL_ICONS: Record<string, string> = {
 
   footer .copy:hover {
     background: #ebf3f9;
+  }
+
+  @media print {
+    .no-print {
+      display: none;
+    }
+  }
+
+  .print {
+    display: none;
+  }
+
+  @media print {
+    .print {
+      display: block;
+    }
   }
 </style>

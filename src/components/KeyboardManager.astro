@@ -1,4 +1,67 @@
-<footer></footer>
+<footer class="no-print">
+  Press <kbd>Ctrl</kbd> + <kbd>K</kbd> Open commands palette
+</footer>
 
-<script></script>
-<style></style>
+<ninja-keys placeholder="Write a command or search"></ninja-keys>
+
+<script>
+  import 'ninja-keys'
+
+  const ninja = document.querySelector('ninja-keys')
+
+  if (ninja) {
+    ninja.data = [
+      {
+        id: 'print',
+        title: 'Print',
+        hotkey: 'ctrl+P',
+        section: 'Actions',
+        handler: () => {
+          window.print()
+        },
+      },
+    ]
+  }
+</script>
+
+<style>
+  @media print {
+    ninja-keys {
+      display: none;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  footer {
+    background: #fdfdfd;
+    border-top: 1px solid #eee;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding-block: 16px;
+    text-align: center;
+    font-size: 18px;
+
+    view-timeline: --revealing;
+    view-timeline-axis: block;
+
+    animation: linear 0.3s fadeIn;
+    animation-timeline: --revealing;
+
+    animation-range: entry 100% cover 10%;
+  }
+
+  @media print {
+    .no-print {
+      display: none;
+    }
+  }
+</style>

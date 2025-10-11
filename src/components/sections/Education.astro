@@ -22,9 +22,11 @@ import { education } from '@cv'
                 <time>{endYear}</time>
               </header>
               <footer>
-                <a href={url} target="_blank" rel="noopener noreferrer">
-                  {url}
-                </a>
+                <h3>
+                  <a href={url} target="_blank" rel="noopener noreferrer">
+                    {url}
+                  </a>
+                </h3>
               </footer>
             </article>
           </li>
@@ -64,5 +66,14 @@ import { education } from '@cv'
   time {
     color: #555;
     font-size: 0.85rem;
+  }
+
+  article a {
+    color: #111;
+    text-decoration: none;
+  }
+
+  article a:hover {
+    text-decoration: underline;
   }
 </style>
